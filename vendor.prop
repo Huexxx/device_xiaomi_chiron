@@ -1,0 +1,5 @@
+# Sensors
+ro.xiaomi.sar_fusion=true
+
+# Display
+vendor.display.disable_avr=1

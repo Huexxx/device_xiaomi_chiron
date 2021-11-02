@@ -14,9 +14,13 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Inherit from msm8998-common
 include device/xiaomi/msm8998-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_DUP_SYSPROP := true
 
 DEVICE_PATH := device/xiaomi/chiron
@@ -30,6 +34,9 @@ TARGET_OTA_ASSERT_DEVICE := chiron
 # Audio
 AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_STATUSBAR := 50
 
@@ -37,7 +44,7 @@ TARGET_RECOVERY_UI_MARGIN_STATUSBAR := 50
 TARGET_SCREEN_DENSITY := 400
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-tmp
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 
 # Inherit from proprietary files
