@@ -17,10 +17,39 @@
 # Inherit from msm8998-common
 include device/xiaomi/msm8998-common/BoardConfigCommon.mk
 
+# Build broken
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# Path
 DEVICE_PATH := device/xiaomi/chiron
 
+# Architecture
+TARGET_CPU_VARIANT_RUNTIME := cortex-a73
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
+TARGET_USES_64_BIT_BINDER := true
+
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT ?= true
+  endif
+endif
+
 # Kernel
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := chiron_defconfig
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := chiron
