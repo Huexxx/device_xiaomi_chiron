@@ -33,6 +33,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="chiron-user 8.0.0 OPR1.170623.027 V9.5.4.0.ODEMIFA release-keys"
+    PRIVATE_BUILD_DESC="oriole-user 12 SD1A.210817.015.A4 7697517 release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/chiron/chiron:8.0.0/OPR1.170623.027/V9.5.4.0.ODEMIFA:user/release-keys
+BUILD_FINGERPRINT := google/oriole/oriole:12/SD1A.210817.015.A4/7697517:user/release-keys
