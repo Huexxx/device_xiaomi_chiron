@@ -2867,11 +2867,11 @@
         <ctl name="SLIM TX7 MUX" value="DEC7" />
         <ctl name="ADC MUX7" value="AMIC" />
         <ctl name="AMIC MUX7" value="ADC4" />
-        <ctl name="ADC4 Volume" value="5" />
+        <ctl name="ADC4 Volume" value="8" />
         <ctl name="SLIM TX8 MUX" value="DEC8" />
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC3" />
-        <ctl name="ADC3 Volume" value="5" />
+        <ctl name="ADC3 Volume" value="8" />
     </path>
 
     <path name="handset-mic-db">
@@ -2968,7 +2968,7 @@
 
     <path name="headset-mic">
         <path name="adc2" />
-        <ctl name="ADC2 Volume" value="5" />
+        <ctl name="ADC2 Volume" value="12" />
     </path>
 
     <path name="headset-mic-liquid">
@@ -3299,6 +3299,8 @@
     </path>
 
     <path name="handset-dmic-endfire">
+        <ctl name="DEC8 Volume" value="21" />
+        <ctl name="DEC7 Volume" value="92" />
         <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
         <ctl name="SLIM TX7 MUX" value="DEC7" />
@@ -3311,6 +3313,7 @@
     </path>
 
     <path name="speaker-dmic-endfire">
+        <ctl name="DEC8 Volume" value="84" />
         <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
         <ctl name="SLIM TX7 MUX" value="DEC7" />
@@ -3508,7 +3511,7 @@
 
     <path name="voice-tty-full-headset-mic">
         <path name="adc2" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="ADC2 Volume" value="12" />
     </path>
 
     <path name="voice-tty-hco-headset-mic">
