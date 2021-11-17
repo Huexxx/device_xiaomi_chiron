@@ -42,15 +42,7 @@ endif
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := chiron_defconfig
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-
-# Set header version for bootimage
-ifneq ($(strip $(TARGET_KERNEL_APPEND_DTB)),true)
-# Enable DTB in bootimage and set header version
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
-else
-BOARD_BOOTIMG_HEADER_VERSION := 1
-endif
 
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
