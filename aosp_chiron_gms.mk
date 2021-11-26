@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -44,3 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sunfish-user 12 SP1A.211105.002 7743617 release-keys"
 
 BUILD_FINGERPRINT := google/sunfish/sunfish:12/SP1A.211105.002/7743617:user/release-keys
+PRODUCT_OVERRIDE_FINGERPRINT := google/sunfish/sunfish:12/SP1A.211105.002/7743617:user/release-keys
