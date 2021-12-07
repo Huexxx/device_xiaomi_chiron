@@ -15,13 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chiron.mk \
-    $(LOCAL_DIR)/aosp_chiron_gms.mk
+    $(LOCAL_DIR)/potato_chiron.mk \
+    $(LOCAL_DIR)/potato_chiron_gms.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chiron-user \
-    aosp_chiron-userdebug \
-    aosp_chiron-eng \
-    aosp_chiron_gms-user \
-    aosp_chiron_gms-userdebug \
-    aosp_chiron_gms-eng
+    potato_chiron-user \
+    potato_chiron-userdebug \
+    potato_chiron-eng \
+    potato_chiron_gms-user \
+    potato_chiron_gms-userdebug \
+    potato_chiron_gms-eng

@@ -22,17 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
-# GMS
-$(call inherit-product, vendor/gapps/gapps.mk)
-
-# SetupWizard and Google Assistant properties
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.setupwizard.rotation_locked=true \
-    setupwizard.theme=glif_v3_light
-
-PRODUCT_NAME := aosp_chiron_gms
+PRODUCT_NAME := potato_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
