@@ -25,12 +25,7 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # GMS
-$(call inherit-product, vendor/gapps/gapps.mk)
-
-# SetupWizard and Google Assistant properties
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.setupwizard.rotation_locked=true \
-    setupwizard.theme=glif_v3_light
+WITH_GMS := true
 
 PRODUCT_NAME := aosp_chiron_gms
 PRODUCT_DEVICE := chiron
