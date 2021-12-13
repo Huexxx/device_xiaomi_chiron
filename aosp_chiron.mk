@@ -33,7 +33,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sunfish-user 12 SP1A.211105.002 7743617 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.015 7679548 release-keys"
 
-BUILD_FINGERPRINT := google/sunfish/sunfish:12/SP1A.211105.002/7743617:user/release-keys
-PRODUCT_OVERRIDE_FINGERPRINT := google/sunfish/sunfish:12/SP1A.211105.002/7743617:user/release-keys
+BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.015/7679548:user/release-keys
+PRODUCT_OVERRIDE_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.015/7679548:user/release-keys
