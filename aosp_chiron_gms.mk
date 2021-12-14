@@ -26,6 +26,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # GMS
 WITH_GMS := true
+$(call inherit-product, vendor/gapps2/gapps.mk)
 
 PRODUCT_NAME := aosp_chiron_gms
 PRODUCT_DEVICE := chiron
