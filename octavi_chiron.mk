@@ -21,14 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Octavi stuff.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
-# GMS
-WITH_GMS := true
-$(call inherit-product, vendor/gapps2/gapps.mk)
+## Lawnchair
+#-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+#-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
-PRODUCT_NAME := aosp_chiron_gms
+OCTAVI_BUILD_TYPE := Unofficial
+OCTAVI_DEVICE_MAINTAINER := Huexxx
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_USES_BLUR := false
+USE_PIXEL_CHARGER := true
+WITH_GAPPS := true
+
+PRODUCT_NAME := octavi_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
@@ -36,8 +45,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 12 SQ1A.220105.002 7961164 release-keys"
+# Fingerprint
+BUILD_FINGERPRINT := google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys
+BUILD_DESCRIPTION := raven-user 12 SQ1D.220205.003 8069835 release-keys
 
-BUILD_FINGERPRINT := google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys
-PRODUCT_OVERRIDE_FINGERPRINT := google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"

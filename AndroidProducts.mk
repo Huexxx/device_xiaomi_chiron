@@ -15,13 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chiron.mk \
-    $(LOCAL_DIR)/aosp_chiron_gms.mk
+    $(LOCAL_DIR)/octavi_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chiron-user \
-    aosp_chiron-userdebug \
-    aosp_chiron-eng \
-    aosp_chiron_gms-user \
-    aosp_chiron_gms-userdebug \
-    aosp_chiron_gms-eng
+    octavi_chiron-user \
+    octavi_chiron-userdebug \
+    octavi_chiron-eng
