@@ -24,6 +24,10 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common AEX stuff
 $(call inherit-product, vendor/aosp/common.mk)
 
+# Lawnchair
+-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SHIP_GCAM_GO := true
 WITH_GAPPS := true
