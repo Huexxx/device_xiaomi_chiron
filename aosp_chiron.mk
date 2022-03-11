@@ -30,6 +30,10 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Graphene Camera
 -include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
+# Lawnchair
+-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
+
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
 
