@@ -30,6 +30,7 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 OCTAVI_BUILD_TYPE := Unofficial
 OCTAVI_DEVICE_MAINTAINER := Huexxx
+SKIP_ABI_CHECKS=true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
