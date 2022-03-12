@@ -24,9 +24,9 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common Octavi stuff.
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
-## Lawnchair
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
+# Lawnchair
+-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
 OCTAVI_BUILD_TYPE := Unofficial
 OCTAVI_DEVICE_MAINTAINER := Huexxx
