@@ -28,8 +28,10 @@ $(call inherit-product, vendor/aosp/common.mk)
 -include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 -include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
+# Graphene Camera
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SHIP_GCAM_GO := true
 WITH_GAPPS := true
 
 PRODUCT_NAME := aosp_chiron
