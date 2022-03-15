@@ -24,8 +24,10 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common AEX stuff
 $(call inherit-product, vendor/aosp/common.mk)
 
+# Graphene Camera
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SHIP_GCAM_GO := true
 WITH_GAPPS := true
 
 PRODUCT_NAME := aosp_chiron
