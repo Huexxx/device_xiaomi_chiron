@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common AEX stuff
 $(call inherit-product, vendor/aosp/common.mk)
 
+# Google Camera
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+
 # Graphene Camera
 -include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
