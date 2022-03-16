@@ -28,6 +28,9 @@ $(call inherit-product, vendor/aosp/common.mk)
 -include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 -include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
+# Google Camera
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+
 # Graphene Camera
 -include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
