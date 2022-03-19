@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Graphene Camera
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+
 PRODUCT_NAME := aosp_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
