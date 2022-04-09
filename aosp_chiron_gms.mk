@@ -30,6 +30,9 @@ $(call inherit-product, vendor/aosp/config/themes.mk)
 PRODUCT_PACKAGES += \
     RepainterServicePriv
 
+# Google Camera
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+
 ARCANA_DEVICE := chiron
 ARCANA_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
