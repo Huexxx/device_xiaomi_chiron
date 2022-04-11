@@ -33,6 +33,10 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
 
+# Remove Unwanted Gapps
+PRODUCT_PACKAGES += \
+    RemoveGapps
+
 PRODUCT_NAME := aosp_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
