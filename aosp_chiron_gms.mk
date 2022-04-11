@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
 # Google Camera
 -include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
 
+# Remove Unwanted Gapps
+PRODUCT_PACKAGES += \
+    RemoveGapps
+
 ARCANA_DEVICE := chiron
 ARCANA_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
