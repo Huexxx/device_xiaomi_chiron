@@ -30,12 +30,10 @@ $(call inherit-product, vendor/aosp/config/themes.mk)
 PRODUCT_PACKAGES += \
     RepainterServicePriv
 
-ARCANA_DEVICE := chiron
 ARCANA_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := false
+TARGET_DEVICE := chiron
 USE_PIXEL_CHARGER_IMAGES := true
 WITH_GAPPS := false
 
