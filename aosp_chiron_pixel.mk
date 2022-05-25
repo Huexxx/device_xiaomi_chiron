@@ -33,14 +33,18 @@ PRODUCT_PACKAGES += \
 # Google Camera
 -include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
 
+# Remove Unwanted Gapps
+PRODUCT_PACKAGES += \
+    RemoveGapps
+
 ARCANA_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_DEVICE := chiron
 USE_PIXEL_CHARGER_IMAGES := true
-WITH_CORE_GAPPS := true
+WITH_GAPPS := true
 
-PRODUCT_NAME := aosp_chiron_gms
+PRODUCT_NAME := aosp_chiron_pixel
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
