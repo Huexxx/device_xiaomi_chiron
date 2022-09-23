@@ -21,26 +21,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common AEX stuff
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Project Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Google Camera
--include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
 
 # Graphene Camera
--include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
--include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
--include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
+#-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
+#-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
+# Project Elixir Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Remove Unwanted Gapps
 PRODUCT_PACKAGES += \
     RemoveGapps
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
@@ -50,8 +52,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Fingerprint
-BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220705.003.A1/8672226:user/release-keys
-BUILD_DESCRIPTION := raven-user 12 SQ3A.220705.003.A1 8672226 release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
+BUILD_DESCRIPTION := raven-user 13 TP1A.220905.004 8927612 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
