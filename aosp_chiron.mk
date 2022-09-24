@@ -39,8 +39,17 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Remove Unwanted Gapps
+ifeq ($(GMS_CORE),true)
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+PRODUCT_PACKAGES += \
+    RemoveGapps_Core
+else ifeq ($(GMS_FULL),true)
+PRODUCT_PACKAGES += \
+    RemoveGapps_Full
+else
 PRODUCT_PACKAGES += \
     RemoveGapps
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_chiron
