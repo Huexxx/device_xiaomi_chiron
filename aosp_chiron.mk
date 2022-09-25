@@ -35,6 +35,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
 # Project Elixir Stuff
+Elixir_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
