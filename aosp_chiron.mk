@@ -39,6 +39,10 @@ Elixir_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Remove Unwanteded Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Remove Unwanted Gapps
 ifeq ($(GMS_CORE),true)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
