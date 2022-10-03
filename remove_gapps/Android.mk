@@ -13,6 +13,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     NetworkPermissionConfigGoogle \
     NetworkStackGoogle \
     PixelDependencies \
+    PlayAutoInstallConfig \
     PrebuiltGoogleAdservicesTvp \
     PrebuiltGoogleTelemetryTvp \
     RilConfigService \
@@ -59,6 +60,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     NgaResources \
     Photos \
     PixelDependencies \
+    PlayAutoInstallConfig \
     PrebuiltGoogleAdservicesTvp \
     PrebuiltGoogleTelemetryTvp \
     RecorderPrebuilt \
@@ -134,7 +136,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     PixelThemesStub \
     PixelWallpapers2021 \
     PlayAutoInstallConfig \
-    PrebuiltBugle \
     PrebuiltBugle \
     PrebuiltGmsCoreSc_AdsDynamite \
     PrebuiltGmsCoreSc_CronetDynamite \
