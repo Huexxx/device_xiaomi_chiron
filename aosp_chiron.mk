@@ -25,10 +25,10 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Google Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
 
 # Graphene Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
