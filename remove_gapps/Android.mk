@@ -51,12 +51,14 @@ LOCAL_OVERRIDES_PACKAGES := \
     DiagnosticsToolPrebuilt \
     GCS \
     grilservice \
+    GoogleTTS \
     KidsSupervisionStub \
     MlkitBarcodeUIPrebuilt \
     MyVerizonServices \
     NetworkPermissionConfigGoogle \
     NetworkStackGoogle \
     NgaResources \
+    Photos \
     PixelDependencies \
     PlayAutoInstallConfig \
     PrebuiltGoogleAdservicesTvp \
@@ -69,6 +71,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Showcase \
     SoundAmplifierPrebuilt \
     StorageManagerGoogle \
+    talkback \
     TetheringEntitlement \
     TurboAdapter \
     TurboPrebuilt \
