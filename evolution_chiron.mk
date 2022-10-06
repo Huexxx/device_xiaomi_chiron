@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Project Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Google Camera
--include vendor/huexxx-prebuilts/packages/apps/GoogleCamera/googlecamera.mk
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
 
 # Graphene Camera
 -include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
@@ -34,30 +34,19 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
-# Project Elixir Stuff
-Elixir_MAINTAINER := Huexxx
+# Evolution X Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Remove Unwanteded Packages
 PRODUCT_PACKAGES += \
     RemovePackages
 
 # Remove Unwanted Gapps
-ifeq ($(GMS_CORE),true)
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-PRODUCT_PACKAGES += \
-    RemoveGapps_Core
-else ifeq ($(GMS_FULL),true)
-PRODUCT_PACKAGES += \
-    RemoveGapps_Full
-else
 PRODUCT_PACKAGES += \
     RemoveGapps
-endif
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_chiron
+PRODUCT_NAME := evolution_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
@@ -66,8 +55,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Fingerprint
-BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
-BUILD_DESCRIPTION := raven-user 13 TP1A.220905.004 8927612 release-keys
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TD1A.220804.031/9071314:user/release-keys
+BUILD_DESCRIPTION := cheetah-user 13 TD1A.220804.031 9071314 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

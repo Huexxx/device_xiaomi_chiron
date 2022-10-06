@@ -1,179 +1,54 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := RemoveGapps_Full
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := \
-    AmbientStreaming \
-    CaptivePortalLoginGoogle \
-    ConnectivityThermalPowerManager \
-    grilservice \
-    MyVerizonServices \
-    NetworkPermissionConfigGoogle \
-    NetworkStackGoogle \
-    PixelDependencies \
-    PlayAutoInstallConfig \
-    PrebuiltGoogleAdservicesTvp \
-    PrebuiltGoogleTelemetryTvp \
-    RilConfigService \
-    SCONE \
-    SecurityHubPrebuilt \
-    TurboAdapter \
-    TurboPrebuilt \
-    Tycho \
-    VZWAPNLib \
-    Photos \
-    GoogleTTS \
-    RecorderPrebuilt
-LOCAL_UNINSTALLABLE_MODULE := true
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := /dev/null
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := RemoveGapps
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    AmbientStreaming \
-    AppDirectedSMSService \
-    BetterBugStub \
-    CaptivePortalLoginGoogle \
     CarrierMetrics \
-    CarrierSetup \
-    CarrierWifi \
-    CbrsNetworkMonitor \
-    ConnectivityThermalPowerManager \
-    ConnMO \
-    DCMO \
     DevicePolicyPrebuilt \
     DiagnosticsToolPrebuilt \
-    GCS \
-    grilservice \
     GoogleTTS \
-    KidsSupervisionStub \
-    MlkitBarcodeUIPrebuilt \
-    MyVerizonServices \
-    NetworkPermissionConfigGoogle \
-    NetworkStackGoogle \
-    NgaResources \
     Photos \
-    PixelDependencies \
     PlayAutoInstallConfig \
-    PrebuiltGoogleAdservicesTvp \
-    PrebuiltGoogleTelemetryTvp \
-    RecorderPrebuilt \
-    RilConfigService \
-    SCONE \
-    ScribePrebuilt \
-    SecurityHubPrebuilt \
-    Showcase \
-    SoundAmplifierPrebuilt \
-    StorageManagerGoogle \
-    talkback \
-    TetheringEntitlement \
-    TurboAdapter \
-    TurboPrebuilt \
     Tycho \
-    VisionBarcodePrebuilt \
     VZWAPNLib \
-    VzwOmaTrigger
-LOCAL_UNINSTALLABLE_MODULE := true
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := /dev/null
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := RemoveGapps_Core
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := \
-    AmbientStreaming \
-    AndroidAutoStubPrebuilt \
-    AppDirectedSMSService \
     arcore \
+    talkback \
+    AmbientStreaming \
+    AppDirectedSMSService \
     BetterBugStub \
-    CaptivePortalLoginGoogle \
     CarrierLocation \
-    CarrierMetrics \
-    CarrierSetup \
+    CarrierServices \
     CarrierWifi \
     CbrsNetworkMonitor \
-    Chrome \
-    Chrome-Stub \
-    ConnectivityThermalPowerManager \
-    ConnMO \
     DCMO \
-    DeviceIntelligenceNetworkPrebuilt \
-    DevicePersonalizationPrebuiltPixel2020 \
-    DevicePolicyPrebuilt \
-    DiagnosticsToolPrebuilt \
+    ConnMO \
     DMService \
-    EmergencyInfoGoogleNoUi \
-    Flipendo \
+    DreamlinerPrebuilt \
+    DreamlinerUpdater \
     GCS \
-    GoogleContacts \
-    GoogleFeedback \
-    GooglePrintRecommendationService \
-    GoogleTTS \
-    grilservice \
-    ImsServiceEntitlement \
+    GoogleCamera \
     KidsSupervisionStub \
-    LatinIMEGooglePrebuilt \
-    LocationHistoryPrebuilt \
+    ImsServiceEntitlement \
     MaestroPrebuilt \
-    MarkupGoogle \
-    MlkitBarcodeUIPrebuilt \
     MyVerizonServices \
-    NetworkPermissionConfigGoogle \
-    NetworkStackGoogle \
-    NexusLauncherRelease \
-    NgaResources \
+    OemDmTrigger \
     OdadPrebuilt \
-    Photos \
-    PixelDependencies \
-    PixelThemesStub \
-    PixelWallpapers2021 \
-    PlayAutoInstallConfig \
-    PrebuiltBugle \
-    PrebuiltGmsCoreSc_AdsDynamite \
-    PrebuiltGmsCoreSc_CronetDynamite \
-    PrebuiltGmsCoreSc_DynamiteLoader \
-    PrebuiltGmsCoreSc_DynamiteModulesA \
-    PrebuiltGmsCoreSc_DynamiteModulesC \
-    PrebuiltGmsCoreSc_GoogleCertificates \
-    PrebuiltGmsCoreSc_MapsDynamite \
-    PrebuiltGmsCoreSc_MeasurementDynamite \
-    PrebuiltGoogleAdservicesTvp \
-    PrebuiltGoogleTelemetryTvp \
-    QuickAccessWallet \
     RecorderPrebuilt \
-    RilConfigService \
-    SafetyHubPrebuilt \
     SCONE \
+    SafetyHubPrebuilt \
     ScribePrebuilt \
-    SecurityHubPrebuilt \
-    SettingsIntelligenceGooglePrebuilt \
     Showcase \
-    SoundAmplifierPrebuilt \
-    StorageManagerGoogle \
-    TagGoogle \
-    talkback \
     TetheringEntitlement \
-    TrichromeLibrary \
-    TrichromeLibrary-Stub \
-    TurboAdapter \
     TurboPrebuilt \
-    Tycho \
-    Velvet \
-    VisionBarcodePrebuilt \
-    VZWAPNLib \
     VzwOmaTrigger \
-    WallpaperPickerGoogleRelease \
-    WebViewGoogle \
-    WebViewGoogle-Stub \
-    WellbeingPrebuilt
+    WfcActivation \
+    CarrierSetup \
+    ConnectivityThermalPowerManager \
+    grilservice \
+    RilConfigService \
+    TurboAdapter
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
