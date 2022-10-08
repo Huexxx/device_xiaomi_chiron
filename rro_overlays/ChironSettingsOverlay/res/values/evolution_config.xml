@@ -16,4 +16,7 @@
 <resources>
     <!-- Whether build status should be shown or not. -->
     <bool name="config_show_build_status">true</bool>
+
+    <!-- Battery health -->
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
