@@ -44,7 +44,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     TurboPrebuilt \
     VzwOmaTrigger \
     WfcActivation \
-    DocumentsUIGoogle \
     CarrierSetup \
     ConnectivityThermalPowerManager \
     grilservice \
