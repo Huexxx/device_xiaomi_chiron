@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_chiron.mk
+    $(LOCAL_DIR)/stag_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_chiron-user \
-    evolution_chiron-userdebug \
-    evolution_chiron-eng
+    stag_chiron-user \
+    stag_chiron-userdebug \
+    stag_chiron-eng

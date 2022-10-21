@@ -21,32 +21,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common StagOS stuff.
+$(call inherit-product, vendor/stag/main.mk)
 
 # Google Camera
--include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
 
 # Graphene Camera
--include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
-# Evolution X Stuff
+# StagOS Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Remove Unwanteded Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+#PRODUCT_PACKAGES += \
+#    RemovePackages
 
 # Remove Unwanted Gapps
-PRODUCT_PACKAGES += \
-    RemoveGapps
+#PRODUCT_PACKAGES += \
+#    RemoveGapps
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_chiron
+PRODUCT_NAME := stag_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
@@ -55,8 +55,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Fingerprint
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TD1A.220804.031/9071314:user/release-keys
-BUILD_DESCRIPTION := cheetah-user 13 TD1A.220804.031 9071314 release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys
+BUILD_DESCRIPTION := raven-user 13 TP1A.221005.002 9012097 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
