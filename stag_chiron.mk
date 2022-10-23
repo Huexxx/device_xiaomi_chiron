@@ -25,10 +25,10 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product, vendor/stag/main.mk)
 
 # Google Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
+-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
 
 # Graphene Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
@@ -37,13 +37,13 @@ $(call inherit-product, vendor/stag/main.mk)
 # StagOS Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Remove Unwanteded Packages
-#PRODUCT_PACKAGES += \
-#    RemovePackages
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Remove Unwanted Gapps
-#PRODUCT_PACKAGES += \
-#    RemoveGapps
+PRODUCT_PACKAGES += \
+    RemoveGapps
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := stag_chiron
