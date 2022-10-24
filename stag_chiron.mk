@@ -38,8 +38,8 @@ $(call inherit-product, vendor/stag/main.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Remove Unwanted Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+#PRODUCT_PACKAGES += \
+#    RemovePackages
 
 # Remove Unwanted Gapps
 PRODUCT_PACKAGES += \
