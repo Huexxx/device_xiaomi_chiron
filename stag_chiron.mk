@@ -25,7 +25,9 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product, vendor/stag/main.mk)
 
 # Google Camera
+ifeq ($(WITH_GAPPS),true)
 -include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
+endif
 
 # Graphene Camera
 -include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
@@ -42,8 +44,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 #    RemovePackages
 
 # Remove Unwanted Gapps
+ifeq ($(WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
     RemoveGapps
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := stag_chiron
