@@ -47,8 +47,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     CarrierSetup \
     ConnectivityThermalPowerManager \
     grilservice \
-    RilConfigService \
-    TurboAdapter
+    RilConfigService
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
