@@ -52,10 +52,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 #    RemovePackages
 
 # Remove Unwanted Gapps
-ifeq ($(WITH_GAPPS),true)
-PRODUCT_PACKAGES += \
-    RemoveGapps
-endif
+#ifeq ($(WITH_GAPPS),true)
+#PRODUCT_PACKAGES += \
+#    RemoveGapps
+#endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := stag_chiron
