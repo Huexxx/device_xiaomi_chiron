@@ -24,6 +24,14 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common StagOS stuff.
 $(call inherit-product, vendor/stag/main.mk)
 
+# Pixel Launcher Mod
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+endif
+
+PIXEL_LAUNCHER_VARIANT := extragrids
+ICONS_VARIANT := true
+
 # Google Camera
 ifeq ($(WITH_GAPPS),true)
 -include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
