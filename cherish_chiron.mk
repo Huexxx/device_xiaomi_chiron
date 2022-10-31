@@ -1,17 +1,7 @@
 #
-# Copyright 2018 The Android Open Source Project
+# Copyright (C) 2022 The CherishOS Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from those products. Most specific first.
@@ -21,38 +11,48 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+ifneq ($(CHERISH_VANILLA),true)
 # Pixel Launcher Mod
 $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+endif
 
 PIXEL_LAUNCHER_VARIANT := extragrids
 ICONS_VARIANT := true
 
+ifneq ($(CHERISH_VANILLA),true)
 # Google Camera
 -include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
+endif
 
 # Graphene Camera
--include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
-# Evolution X Stuff
+# CherishOS Stuff with GApps
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_BOOT_ANIMATION_RES := 1080
+ifneq ($(CHERISH_VANILLA),true)
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
+endif
 
 # Remove Unwanteded Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+#PRODUCT_PACKAGES += \
+#    RemovePackages
 
+#ifneq ($(CHERISH_VANILLA),true)
 # Remove Unwanted Gapps
-PRODUCT_PACKAGES += \
-    RemoveGapps
+#PRODUCT_PACKAGES += \
+#    RemoveGapps
+#endif
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_chiron
+PRODUCT_NAME := cherish_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
