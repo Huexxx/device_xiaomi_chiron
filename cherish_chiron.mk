@@ -47,11 +47,11 @@ endif
 #PRODUCT_PACKAGES += \
 #    RemovePackages
 
-#ifneq ($(CHERISH_VANILLA),true)
+ifneq ($(CHERISH_VANILLA),true)
 # Remove Unwanted Gapps
-#PRODUCT_PACKAGES += \
-#    RemoveGapps
-#endif
+PRODUCT_PACKAGES += \
+    RemoveGapps
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_chiron
