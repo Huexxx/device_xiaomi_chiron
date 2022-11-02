@@ -28,7 +28,7 @@ ifneq ($(CHERISH_VANILLA),true)
 endif
 
 # Graphene Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
@@ -37,7 +37,6 @@ endif
 # CherishOS Stuff with GApps
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=Huexxx
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_BOOT_ANIMATION_RES := 1080
 ifneq ($(CHERISH_VANILLA),true)
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
