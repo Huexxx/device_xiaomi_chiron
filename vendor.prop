@@ -5,7 +5,6 @@ bluetooth.device.default_name=Mi MIX 2
 vendor.display.disable_avr=1
 
 # Sensors
-ro.vendor.sensors.noneui=true
 ro.xiaomi.sar_fusion=true
 
 
