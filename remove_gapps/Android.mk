@@ -17,7 +17,10 @@ LOCAL_OVERRIDES_PACKAGES := \
     MyVerizonServices \
     RilConfigService \
     PixelDependencies \
-    PlayAutoInstallConfig
+    PlayAutoInstallConfig \
+    Flipendo \
+    TurboPrebuilt \
+    TurboAdapter
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
