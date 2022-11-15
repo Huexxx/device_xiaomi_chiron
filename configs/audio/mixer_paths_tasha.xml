@@ -931,7 +931,7 @@
     </path>
 
     <path name="audio-ull-playback speaker-safe-and-headphones">
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
         <path name="audio-ull-playback headphones" />
     </path>
 
@@ -960,7 +960,7 @@
 
     <path name="audio-ull-playback speaker-safe-and-hdmi">
         <path name="audio-ull-playback hdmi" />
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="audio-ull-playback speaker-and-display-port">
@@ -970,7 +970,7 @@
 
     <path name="audio-ull-playback speaker-safe-and-display-port">
         <path name="audio-ull-playback display-port" />
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="audio-ull-playback afe-proxy">
@@ -992,7 +992,7 @@
 
     <path name="audio-ull-playback speaker-safe-and-bt-sco">
         <path name="audio-ull-playback bt-sco" />
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="audio-ull-playback speaker-and-bt-sco-wb">
@@ -1002,7 +1002,7 @@
 
     <path name="audio-ull-playback speaker-safe-and-bt-sco-wb">
         <path name="audio-ull-playback bt-sco-wb" />
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="multi-channel-playback hdmi">
@@ -3735,7 +3735,7 @@
 
     <path name="audio-ull-playback speaker-safe-and-bt-a2dp">
         <path name="audio-ull-playback bt-a2dp" />
-        <path name="audio-ull-playback speaker-safe" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="hifi-playback display-port">
