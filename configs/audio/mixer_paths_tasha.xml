@@ -53,8 +53,6 @@
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
     <ctl name="RX0 Digital Volume" value="84" />
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="RX4 Digital Volume" value="84" />
     <ctl name="RX5 Digital Volume" value="84" />
@@ -112,15 +110,7 @@
     <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="0" />
     <ctl name="MultiMedia5 Mixer SLIM_8_TX" value="0" />
     <ctl name="MultiMedia5 Mixer SLIM_7_TX" value="0" />
-    <ctl name="MultiMedia4 Mixer MI2S_TX" value="0" />
     <ctl name="MultiMedia1 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia7 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia10 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia11 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia12 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia13 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia14 Mixer MI2S_TX" value="0" />
-    <ctl name="MultiMedia15 Mixer MI2S_TX" value="0" />
     <ctl name="MultiMedia16 Mixer MI2S_TX" value="0" />
     <ctl name="MultiMedia1 Mixer SLIM_0_TX" value="0" />
     <ctl name="MultiMedia1 Mixer SLIM_4_TX" value="0" />
@@ -206,7 +196,6 @@
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia6" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="0" />
-    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia9" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia10" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia11" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia12" value="0" />
@@ -373,14 +362,6 @@
     <ctl name="SLIM RX5 MUX" value="ZERO" />
     <ctl name="EAR PA Gain" value="G_6_DB" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
-    <ctl name="SpkrLeft COMP Switch" value="0" />
-    <ctl name="SpkrRight COMP Switch" value="0" />
-    <ctl name="SpkrLeft BOOST Switch" value="0" />
-    <ctl name="SpkrRight BOOST Switch" value="0" />
-    <ctl name="SpkrLeft VISENSE Switch" value="0" />
-    <ctl name="SpkrRight VISENSE Switch" value="0" />
-    <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
-    <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
     <ctl name="SLIM RX1 MUX" value="ZERO" />
     <ctl name="AIF1_CAP Mixer SLIM TX7" value="0" />
     <ctl name="AIF1_CAP Mixer SLIM TX8" value="0"/>
@@ -559,7 +540,6 @@
     <ctl name="ANC EAR Enable Switch" value="0" />
     <ctl name="ANC OUT EAR SPKR Enable Switch" value="0" />
     <ctl name="ANC SPKR PA Enable Switch" value="0" />
-    <ctl name="SpkrLeft WSA PA Gain" value="G_0_DB" />
     <!-- anc handset end -->
     <ctl name="ANC Function" value="OFF" />
     <ctl name="ANC HPHL Enable Switch" value="0" />
@@ -585,14 +565,6 @@
     <ctl name="MultiMedia8 Mixer AFE_PCM_TX" value="0" />
     <!-- audio record compress end-->
     <!-- listen -->
-    <ctl name="LSM1 MUX" value="None" />
-    <ctl name="LSM2 MUX" value="None" />
-    <ctl name="LSM3 MUX" value="None" />
-    <ctl name="LSM4 MUX" value="None" />
-    <ctl name="LSM5 MUX" value="None" />
-    <ctl name="LSM6 MUX" value="None" />
-    <ctl name="LSM7 MUX" value="None" />
-    <ctl name="LSM8 MUX" value="None" />
     <ctl name="SLIMBUS_5_TX LSM Function" value="None" />
     <!-- listen end-->
     <!-- split a2dp -->
@@ -2115,7 +2087,6 @@
     </path>
 
     <path name="low-latency-record capture-fm">
-      <ctl name="MultiMedia8 Mixer SLIM_8_TX" value="1" />
     </path>
 
     <path name="fm-virtual-record capture-fm">
@@ -2279,7 +2250,6 @@
    </path>
 
     <path name="hfp-sco-wb headphones">
-        <ctl name="AUX PCM SampleRate" value="KHZ_16" />
         <path name="hfp-sco headphones" />
     </path>
 
@@ -2534,35 +2504,27 @@
     </path>
 
     <path name="listen-voice-wakeup-1">
-        <ctl name="LSM1 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-2">
-        <ctl name="LSM2 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-3">
-        <ctl name="LSM3 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-4">
-        <ctl name="LSM4 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-5">
-        <ctl name="LSM5 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-6">
-        <ctl name="LSM6 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-7">
-        <ctl name="LSM7 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
     <path name="listen-voice-wakeup-8">
-        <ctl name="LSM8 MUX" value="SLIMBUS_5_TX" />
         <ctl name="SLIMBUS_5_TX LSM Function" value="AUDIO" />
     </path>
 
@@ -2576,8 +2538,6 @@
     <!-- These are actual sound device specific mixer settings -->
     <path name="ultrasound-handset">
         <ctl name="Ultrasound Enable" value="On" />
-        <ctl name="SLIM_1_RX Channels" value="One" />
-        <ctl name="SLIM_1_RX SampleRate" value="KHZ_96" />
         <ctl name="SLIM RX7 MUX" value="AIF2_PB" />
         <ctl name="RX INT6_2 MUX" value="RX7" />
         <ctl name="LINEOUT4 Volume" value="16" />
@@ -2587,7 +2547,6 @@
 
     <path name="ultrasound-mic">
         <ctl name="SLIM_1_TX Channels" value="One" />
-        <ctl name="SLIM_1_TX SampleRate" value="KHZ_96" />
         <ctl name="AIF2_CAP Mixer SLIM TX4" value="1" />
         <ctl name="SLIM TX4 MUX" value="DEC4" />
         <ctl name="ADC MUX4" value="AMIC" />
@@ -2724,10 +2683,6 @@
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="SpkrLeft COMP Switch" value="1" />
-        <ctl name="SpkrLeft BOOST Switch" value="1" />
-        <ctl name="SpkrLeft VISENSE Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
     </path>
 
     <path name="speaker-mono">
@@ -2912,7 +2867,6 @@
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="ANC OUT EAR SPKR Enable Switch" value="1" />
         <ctl name="ANC SPKR PA Enable Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
         <ctl name="SpkrLeft WSA PA Gain" value="G_6_DB" />
     </path>
 
@@ -3083,8 +3037,6 @@
         <ctl name="RX INT2_1 MIX1 INP0" value="RX3" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX1 Digital Volume" value="81" />
-        <ctl name="RX2 Digital Volume" value="81" />
         <ctl name="ANC HPHL Enable Switch" value="1" />
         <ctl name="ANC HPHR Enable Switch" value="1" />
     </path>
@@ -3129,8 +3081,6 @@
         <ctl name="IIR0 INP0 Volume" value="54" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX1 Digital Volume" value="81" />
-        <ctl name="RX2 Digital Volume" value="81" />
         <ctl name="ANC HPHL Enable Switch" value="1" />
         <ctl name="ANC HPHR Enable Switch" value="1" />
     </path>
@@ -3160,8 +3110,6 @@
         <ctl name="IIR0 INP0 Volume" value="62" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX1 Digital Volume" value="81" />
-        <ctl name="RX2 Digital Volume" value="81" />
         <ctl name="ANC HPHL Enable Switch" value="1" />
         <ctl name="ANC HPHR Enable Switch" value="1" />
     </path>
