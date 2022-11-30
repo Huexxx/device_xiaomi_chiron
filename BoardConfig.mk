@@ -39,6 +39,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Kernel
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := chiron_defconfig
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
