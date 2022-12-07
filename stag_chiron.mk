@@ -46,6 +46,7 @@ endif
 
 # StagOS Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Remove Unwanted Packages
 #PRODUCT_PACKAGES += \
