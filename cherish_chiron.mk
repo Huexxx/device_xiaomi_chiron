@@ -14,13 +14,13 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common CherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-ifneq ($(CHERISH_VANILLA),true)
+#ifneq ($(CHERISH_VANILLA),true)
 # Pixel Launcher Mod
-$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
-endif
+#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+#endif
 
-PIXEL_LAUNCHER_VARIANT := extragrids
-ICONS_VARIANT := true
+#PIXEL_LAUNCHER_VARIANT := extragrids
+#ICONS_VARIANT := true
 
 #ifneq ($(CHERISH_VANILLA),true)
 # Google Camera
