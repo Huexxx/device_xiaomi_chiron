@@ -31,10 +31,10 @@ PIXEL_LAUNCHER_VARIANT := extragrids
 ICONS_VARIANT := true
 
 # Google Camera
--include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
 
 # Graphene Camera
--include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
+#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
 # Lawnchair
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
