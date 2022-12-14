@@ -25,10 +25,10 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Pixel Launcher Mod
-$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
-PIXEL_LAUNCHER_VARIANT := extragrids
-ICONS_VARIANT := true
+#PIXEL_LAUNCHER_VARIANT := extragrids
+#ICONS_VARIANT := true
 
 # Google Camera
 #-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
