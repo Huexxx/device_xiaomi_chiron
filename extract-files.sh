@@ -15,10 +15,7 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
         vendor/lib64/libgf_hal.so)
-            "${PATCHELF}" --replace-needed "libpowermanager.so" "libpowermanager-v28.so" "${2}"
-            ;;
-        vendor/lib64/libpowermanager-v28.so)
-            "${PATCHELF}" --set-soname "libpowermanager-v28.so" "${2}"
+            "${PATCHELF}" --remove-needed "libpowermanager.so" "${2}"
             ;;
         vendor/lib64/libultrasound.so)
             "${PATCHELF}" --remove-needed "libmedia.so" "${2}"
