@@ -135,12 +135,11 @@ vendor/lib/libmmcamera_chiron_ov5675_qtech.so|3fb790511c17dccc9920121be3e490a9b8
 vendor/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml|34d28107002c86457ce2fd1387e0bc107db46c62
 
 # Fingerprint
-vendor/lib64/libpowermanager-v28.so|dc0c57770af803c51ea7f4d49bf3d533050f6831
 vendor/lib64/com.fingerprints.extension@1.0.so|e8ee9e24b9b2dcfe7c765cf21d2d11cae196e7f6
 vendor/lib64/hw/fingerprint.fpc.msm8998.so|7a4f9d85d24a1b16514de9883e90533c899cf2c5
 vendor/lib64/hw/fingerprint.goodix.msm8998.so|44d97b4f51787530c19772f274d848055599a5c6
 vendor/lib64/libgf_ca.so|fb6761c7280732d185fb47b09dad4987aa8135a7
-vendor/lib64/libgf_hal.so|8fd34320a34c445151f4af2d6dc5ba4d126303c9
+vendor/lib64/libgf_hal.so|3019c9deaf064c84f7a2d35a227794f457164938
 vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so|0d47f5c53983e56cf8a099d2a482568d04fcb6f0
 
 # Sensors
