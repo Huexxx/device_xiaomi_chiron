@@ -1,8 +1,5 @@
-allow hal_sensors_default audioserver:binder { call transfer };
-allow hal_sensors_default audioserver_service:service_manager find;
+hal_client_domain(hal_sensors_default, hal_audio)
 
 allow hal_sensors_default sound_device:chr_file { ioctl read open };
 
 get_prop(hal_sensors_default, boot_status_prop)
-
-binder_use(hal_sensors_default)
