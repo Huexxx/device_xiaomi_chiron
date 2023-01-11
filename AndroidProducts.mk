@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 The CherishOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chiron.mk
+    $(LOCAL_DIR)/lineage_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_chiron-user \
-    cherish_chiron-userdebug \
-    cherish_chiron-eng
+    lineage_chiron-user \
+    lineage_chiron-userdebug \
+    lineage_chiron-eng

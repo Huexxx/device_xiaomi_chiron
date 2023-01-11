@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The CherishOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,18 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common RiceDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#ifneq ($(CHERISH_VANILLA),true)
-# Pixel Launcher Mod
-#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
-#endif
-
-#PIXEL_LAUNCHER_VARIANT := extragrids
-#ICONS_VARIANT := true
-
-#ifneq ($(CHERISH_VANILLA),true)
+#ifneq ($(WITH_GMS),)
 # Google Camera
 #-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
 #endif
@@ -30,30 +22,24 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Graphene Camera
 #-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
-# Lawnchair
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
-
-# CherishOS Stuff with GApps
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Huexxx
-TARGET_BOOT_ANIMATION_RES := 1080
-ifneq ($(CHERISH_VANILLA),true)
-TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
-endif
+# RiceDroid Stuff
+RICE_CHIPSET := "Snapdragon 835"
+RICE_MAINTAINER := Huexxx
+SUSHI_BOOTANIMATION := 1080
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Remove Unwanteded Packages
 #PRODUCT_PACKAGES += \
 #    RemovePackages
 
-ifneq ($(CHERISH_VANILLA),true)
+#ifneq ($(WITH_GMS),)
 # Remove Unwanted Gapps
-PRODUCT_PACKAGES += \
-    RemoveGapps
-endif
+#PRODUCT_PACKAGES += \
+#    RemoveGapps
+#endif
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_chiron
+PRODUCT_NAME := lineage_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
