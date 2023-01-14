@@ -22,6 +22,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Graphene Camera
 #-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
 
+# Acons and DGicons
+-include vendor/huexxx-prebuilts/packages/apps/Acons/acons.mk
+-include vendor/huexxx-prebuilts/packages/apps/DGicons/dgicons.mk
+
 # RiceDroid Stuff
 RICE_CHIPSET := "Snapdragon 835"
 RICE_MAINTAINER := Huexxx
