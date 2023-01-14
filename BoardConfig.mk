@@ -17,6 +17,10 @@
 # Inherit from msm8998-common
 include device/xiaomi/msm8998-common/BoardConfigCommon.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_chiron
+TARGET_RECOVERY_DEVICE_MODULES := libinit_chiron
+
 # Build broken
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
