@@ -27,7 +27,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 -include vendor/huexxx-prebuilts/packages/apps/DGicons/dgicons.mk
 
 # RiceDroid Stuff
-RICE_CHIPSET := "Snapdragon 835"
 RICE_MAINTAINER := Huexxx
 SUSHI_BOOTANIMATION := 1080
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
