@@ -5,19 +5,50 @@ LOCAL_MODULE := RemoveGapps
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+    AdaptiveVPNPrebuilt \
     AmbientStreaming \
+    AppDirectedSMSService \
+    BetterBugStub \
+    CarrierLocation \
+    CarrierMetrics \
+    CarrierServices \
+    CarrierSetup \
+    CarrierWifi \
+    CbrsNetworkMonitor \
+    Chrome \
+    ConnectivityThermalPowerManager \
+    ConnMO \
+    DCMO \
+    DevicePolicyPrebuilt \
+    DiagnosticsToolPrebuilt \
+    DMService \
     DreamlinerPrebuilt \
     DreamlinerUpdater \
+    GCS \
     GoogleCamera \
-    SCONE \
-    Tycho \
-    VZWAPNLib \
     grilservice \
-    ConnectivityThermalPowerManager \
+    ImsServiceEntitlement \
+    KidsSupervisionStub \
+    MaestroPrebuilt \
+    MlkitBarcodeUIPrebuilt \
     MyVerizonServices \
-    RilConfigService \
+    OdadPrebuilt \
     PixelDependencies \
-    PlayAutoInstallConfig
+    PixelLiveWallpaperPrebuilt \
+    PlayAutoInstallConfig \
+    RilConfigService \
+    SafetyHubPrebuilt \
+    SCONE \
+    ScribePrebuilt \
+    SecurityHubPrebuilt \
+    Showcase \
+    TetheringEntitlement \
+    TurboAdapter \
+    TurboPrebuilt \
+    Tycho \
+    VisionBarcodePrebuilt \
+    VZWAPNLib \
+    VzwOmaTrigger
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
