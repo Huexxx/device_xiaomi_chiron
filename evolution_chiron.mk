@@ -40,6 +40,12 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
+# Google Camera Go
+ifeq ($(GCAMGO),true)
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3
+endif
+
 # Evolution X Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
