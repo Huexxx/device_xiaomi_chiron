@@ -34,7 +34,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     MyVerizonServices \
     OdadPrebuilt \
     PixelDependencies \
-    PixelLiveWallpaperPrebuilt \
     PlayAutoInstallConfig \
     RilConfigService \
     SafetyHubPrebuilt \
