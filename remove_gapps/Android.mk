@@ -39,7 +39,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     SafetyHubPrebuilt \
     SCONE \
     ScribePrebuilt \
-    SecurityHubPrebuilt \
     Showcase \
     TetheringEntitlement \
     TurboAdapter \
