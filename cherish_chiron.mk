@@ -35,8 +35,7 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
 # CherishOS Stuff with GApps
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Huexxx
+CHERISH_MAINTAINER := Huexxx
 TARGET_BOOT_ANIMATION_RES := 1080
 ifneq ($(CHERISH_VANILLA),true)
 TARGET_SUPPORTS_CALL_RECORDING ?= true
