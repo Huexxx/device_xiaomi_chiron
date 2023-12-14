@@ -44,6 +44,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     TurboAdapter \
     TurboPrebuilt \
     Tycho \
+    Videos \
     VisionBarcodePrebuilt \
     VZWAPNLib \
     VzwOmaTrigger
