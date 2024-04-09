@@ -29,7 +29,6 @@ DEVICE_PATH := device/xiaomi/chiron
 # Architecture
 TARGET_CPU_VARIANT_RUNTIME := cortex-a73
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
-TARGET_USES_64_BIT_BINDER := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
