@@ -34,8 +34,11 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
 #-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
 
-# CherishOS Stuff with GApps
+# CherishOS Stuff
+CHERISH_BATTERY := 3350mAh
+CHERISH_CHIPSET := MSM8998
 CHERISH_MAINTAINER := Huexxx
+CHERISH_DISPLAY := 1080x2160
 TARGET_BOOT_ANIMATION_RES := 1080
 ifneq ($(CHERISH_VANILLA),true)
 TARGET_SUPPORTS_CALL_RECORDING ?= true
