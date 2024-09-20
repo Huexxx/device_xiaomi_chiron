@@ -11,48 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
-# Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit from common lineage configuration
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#ifneq ($(CHERISH_VANILLA),true)
-# Pixel Launcher Mod
-#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
-#endif
-
-#PIXEL_LAUNCHER_VARIANT := extragrids
-#ICONS_VARIANT := true
-
-#ifneq ($(CHERISH_VANILLA),true)
-# Google Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GoogleCameraEng/googlecameraeng.mk
-#endif
-
-# Graphene Camera
-#-include vendor/huexxx-prebuilts/packages/apps/GrapheneCamera/graphenecamera.mk
-
-# Lawnchair
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnchair/lawnchair.mk
-#-include vendor/huexxx-prebuilts/packages/apps/Lawnicons/lawnicons.mk
-
-# CherishOS Stuff
-CHERISH_BATTERY := 3350mAh
-CHERISH_CHIPSET := MSM8998
-CHERISH_MAINTAINER := Huexxx
-CHERISH_DISPLAY := 1080x2160
+# EvolutionX Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-ifneq ($(CHERISH_VANILLA),true)
-TARGET_SUPPORTS_CALL_RECORDING ?= true
-endif
+WITH_GMS := true
 
 # Remove Unwanteded Packages
 #PRODUCT_PACKAGES += \
 #    RemovePackages
 
-ifneq ($(CHERISH_VANILLA),true)
+#ifeq ($(WITH_GMS),true)
 # Remove Unwanted Gapps
-PRODUCT_PACKAGES += \
-    RemoveGapps
-endif
+#PRODUCT_PACKAGES += \
+#    RemoveGapps
+#endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_chiron
