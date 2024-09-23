@@ -22,11 +22,11 @@ WITH_GMS := true
 #PRODUCT_PACKAGES += \
 #    RemovePackages
 
-#ifeq ($(WITH_GMS),true)
+ifeq ($(WITH_GMS),true)
 # Remove Unwanted Gapps
-#PRODUCT_PACKAGES += \
-#    RemoveGapps
-#endif
+PRODUCT_PACKAGES += \
+    RemoveGapps
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_chiron
