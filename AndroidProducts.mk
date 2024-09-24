@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chiron.mk
+    $(LOCAL_DIR)/bliss_chiron.mk
+
+COMMON_LUNCH_CHOICES := \
+    bliss_chiron-user \
+    bliss_chiron-userdebug \
+    bliss_chiron-eng
