@@ -16,6 +16,7 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_PIXEL_GOODIES := true
 TARGET_STOCK_GAPPS := true
 
 # Remove Unwanteded Packages
