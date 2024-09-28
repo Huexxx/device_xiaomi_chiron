@@ -22,11 +22,11 @@ TARGET_STOCK_GAPPS := true
 #PRODUCT_PACKAGES += \
 #    RemovePackages
 
-#ifeq ($(BLISS_BUILD_VARIANT), gapps)
-## Remove Unwanted Gapps
-#PRODUCT_PACKAGES += \
-#    RemoveGapps
-#endif
+ifeq ($(BLISS_BUILD_VARIANT), gapps)
+# Remove Unwanted Gapps
+PRODUCT_PACKAGES += \
+    RemoveGapps
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_chiron
