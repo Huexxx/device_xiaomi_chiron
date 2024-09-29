@@ -165,16 +165,16 @@
     <string name="enable_fingerprint_ripple_effect_title">Animación de desbloqueo</string>
     <string name="enable_fingerprint_ripple_effect_summary">Muestra un efecto de onda al desbloquear con huella dactilar</string>
     <!-- Weather -->
-    <string name="weather_category_title">Clima</string>
-    <string name="weather_settings_title">Ajustes de clima</string>
-    <string name="weather_settings_summary">Establece el pack de iconos y el servicio de clima</string>
-    <string name="lockscreen_weather_title">Condiciones climáticas</string>
-    <string name="lockscreen_weather_summary">Muestra las condiciones climáticas actuales y temperatura</string>
-    <string name="lockscreen_weather_enabled_info">Requiere que el servicio climático esté activado</string>
+    <string name="weather_category_title">Meteorología</string>
+    <string name="weather_settings_title">Ajustes meteorológicos</string>
+    <string name="weather_settings_summary">Establece el pack de iconos y el servicio meteorológico</string>
+    <string name="lockscreen_weather_title">Condiciones meteorológicas</string>
+    <string name="lockscreen_weather_summary">Muestra las condiciones meteorológicas actuales</string>
+    <string name="lockscreen_weather_enabled_info">Requiere que el servicio meteorológico esté activado</string>
     <string name="lockscreen_weather_location_title">Localización actual</string>
-    <string name="lockscreen_weather_location_summary">Muestra la localización de las condiciones climáticas actuales</string>
+    <string name="lockscreen_weather_location_summary">Muestra la localización de las condiciones meteorológicas actuales</string>
     <string name="lockscreen_weather_text_title">Condiciones actuales</string>
-    <string name="lockscreen_weather_text_summary">Muestra un resumen de las condiciones climáticas actuales</string>
+    <string name="lockscreen_weather_text_summary">Muestra un resumen de las condiciones meteorológicas actuales</string>
     <!-- Battery customizations -->
     <string name="status_bar_battery_style_title">Estilo de batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
