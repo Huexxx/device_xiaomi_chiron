@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2022 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+  <string name="quick_settings_internet_hotspot_summary_num_devices">{count, plural,
+      =1 {# dispositivo conectado}
+      other {# dispositivos conectados}
+  }</string>
+  <!-- Label for area where tiles can be added to the qs panel -->
+  <string name="drag_or_tap_to_add_tiles">Mantén pulsado &amp; arrastra o pulsa para añadir mosaicos</string>
+  <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+  <string name="screenshot_delete_label">Borrar</string>
+  <!-- Label for UI element which allows to use lens on screenshot [CHAR LIMIT=30] -->
+  <string name="screenshot_lens_label">Lens</string>
+  <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+  <string name="screenshot_delete_description">Eliminar captura de pantalla</string>
+  <!-- Advanced restart menu -->
+  <!-- Button to indicate more options -->
+  <string name="global_action_restart_more">Reiniciar\u2026</string>
+  <!-- Button to restart the device, within the Restart Options dialog -->
+  <string name="global_action_restart_system">Sistema</string>
+  <!-- Button to restart the device into recovery mode, within the Restart Options dialog -->
+  <string name="global_action_restart_recovery">Recovery</string>
+  <!-- Button to restart the device into bootloader mode, within the Restart Options dialog -->
+  <string name="global_action_restart_bootloader">Bootloader</string>
+  <!-- Button to restart the device into download mode, within the Restart Options dialog -->
+  <string name="global_action_restart_download">Download</string>
+  <!-- Button to restart the device into fastboot mode, within the Restart Options dialog -->
+  <string name="global_action_restart_fastboot">Fastbootd</string>
+  <!-- Restart progress dialog. This is shown if the user chooses to restart the device. -->
+  <string name="global_action_restart_progress">Reiniciando\u2026</string>
+  <!-- Restart to recovery mode progress dialog. This is shown if the user chooses to restart the device. -->
+  <string name="global_action_restart_recovery_progress">Reiniciando a Recovery\u2026</string>
+  <!-- Restart to bootloader mode progress dialog. This is shown if the user chooses to restart the device. -->
+  <string name="global_action_restart_bootloader_progress">Reiniciando a Bootloader\u2026</string>
+  <!-- Restart to download mode progress dialog. This is shown if the user chooses to restart the device. -->
+  <string name="global_action_restart_download_progress">Reiniciando a Download\u2026</string>
+  <!-- Restart to fastboot mode progress dialog. This is shown if the user chooses to restart the device. -->
+  <string name="global_action_restart_fastboot_progress">Reiniciando a Fastbootd\u2026</string>
+  <!-- Label for current user in power menu options dialog -->
+  <string name="global_action_current_user">Actual</string>
+  <string name="global_action_users">Usuarios</string>
+  <string name="global_action_panic">Disparador de pánico</string>
+  <string name="global_action_restart_systemui">SystemUI</string>
+  <!-- Navigation bar dpad -->
+  <string name="accessibility_dpad_left">Cursor a la izquierda</string>
+  <string name="accessibility_dpad_right">Cursor a la derecha</string>
+  <!-- Status bar - icons -->
+  <string name="status_bar_icons_title">Iconos de la barra de estado</string>
+  <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
+  <string name="clock">Reloj</string>
+  <!-- Status bar tuner -->
+  <string name="status_bar_ims">VoLTE/VoWiFi</string>
+  <!-- Status bar network traffic monitor strings -->
+  <string name="kilobitspersecond_short">kb/s</string>
+  <string name="megabitspersecond_short">Mb/s</string>
+  <string name="gigabitspersecond_short">Gb/s</string>
+  <string name="kilobytespersecond_short">kB/s</string>
+  <string name="megabytespersecond_short">MB/s</string>
+  <string name="gigabytespersecond_short">GB/s</string>
+  <!-- Text while recognizing face -->
+  <string name="face_unlock_recognizing">Reconociendo la cara...</string>
+  <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">Captura de pantalla eliminada</string>
+  <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+  <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> until full)</string>
+  <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Carga rápida</string>
+  <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+  <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Carga Dash (<xliff:g id="charging_time_left" example="4 horas y 2 minutos">%1$s</xliff:g> hasta carga completa)</string>
+  <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Carga Warp</string>
+  <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+  <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Carga VOOC (<xliff:g id="charging_time_left" example="4 horas y 2 minutos">%1$s</xliff:g> hasta carga completa)</string>
+  <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • Carga VOOC</string>
+  <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_charging [CHAR LIMIT=40]-->
+  <string name="keyguard_indication_turbo_power_time"><xliff:g id="percentage">%2$s</xliff:g> • Carga turbo (<xliff:g id="charging_time_left" example="4 horas y 2 minutos">%1$s</xliff:g> hasta carga completa)</string>
+  <string name="keyguard_plugged_in_turbo_charging"><xliff:g id="percentage">%s</xliff:g> • Carga turbo</string>
+  <!-- Alert slide extras -->
+  <string name="volume_ringer_priority_only">Prioridad</string>
+  <string name="volume_ringer_alarms_only">Alarmas</string>
+  <string name="volume_ringer_dnd">DnD</string>
+  <string name="tristate_flashlight">Linterna</string>
+  <string name="tristate_flashlight_on">Linterna encendida</string>
+  <string name="tristate_flashlight_off">Linterna apagada</string>
+  <string name="tristate_flashlight_blink">Parpadeo de la linterna</string>
+  <string name="tristate_brightness_bright">Brillo máximo</string>
+  <string name="tristate_brightness_dark">Brillo mínimo</string>
+  <string name="tristate_brightness_auto">Brillo automático</string>
+  <string name="tristate_rotation_auto">Autorrotar</string>
+  <string name="tristate_rotation_0">Vertical</string>
+  <string name="tristate_rotation_90">Apaisado (90°)</string>
+  <string name="tristate_rotation_270">Apaisado (270°)</string>
+  <!-- Screen record delete action -->
+  <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+  <string name="screenrecord_delete_label">Borrar</string>
+  <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+  <string name="screenrecord_delete_description">Grabación de pantalla eliminada</string>
+  <!-- Screen record -->
+  <string name="screenrecord_stopdot_label">Mostrar icono para detener</string>
+  <string name="screenrecord_stopdot_summary">Mantén presionado para moverlo</string>
+  <string name="screenrecord_lowquality_label">Baja calidad</string>
+  <string name="screenrecord_lowquality_summary">Para archivos de menor tamaño</string>
+  <string name="screenrecord_longer_timeout_switch_label">Límite de tamaño de archivo máximo</string>
+  <string name="screenrecord_longer_timeout_switch_summary">Limitar el tamaño de grabación a 15 GB</string>
+  <string name="screenrecord_skip_time_label">Saltar temporizador</string>
+  <string name="screenrecord_skip_time_summary">Eliminar 3 segundos de espera</string>
+  <string name="screenrecord_hevc_switch_label">Activar HEVC</string>
+  <string name="screenrecord_hevc_switch_summary">Utilizar codificación de vídeo HEVC más eficiente</string>
+    <!-- Text to use when the number in a notification info is too large -->
+  <!-- Data usage info in QS footer -->
+  <string name="usage_data">usado hoy</string>
+  <string name="usage_data_default_suffix">Datos</string>
+  <string name="usage_wifi_default_suffix">Wi-Fi</string>
+  <!-- Preferred network tile -->
+  <string name="quick_settings_preferred_network_label">Red preferida</string>
+  <string name="quick_settings_preferred_network_lte">4G / LTE</string>
+  <string name="quick_settings_preferred_network_nr">5G / NR</string>
+  <string name="quick_settings_preferred_network_unsupported">No soportado</string>
+  <!-- Name of the firewall status bar icon. -->
+  <string name="status_bar_firewall">Cortafuegos</string>
+  <!-- Weather -->
+  <string name="weather_condition_clouds">Nublado</string>
+  <string name="weather_condition_rain">Lluvioso</string>
+  <string name="weather_condition_clear">Soleado</string>
+  <string name="weather_condition_storm">Tormentas</string>
+  <string name="weather_condition_snow">Nieve</string>
+  <string name="weather_condition_wind">Ventoso</string>
+  <string name="weather_condition_mist">Brumas</string>
+  <!-- DataSwitch Tile -->
+  <string name="qs_data_switch_label">Cambiar tarjeta de datos</string>
+  <string name="qs_data_switch_toast_0">Actualmente no hay ninguna SIM insertada</string>
+  <string name="qs_data_switch_toast_1">Actualmente solo hay una SIM insertada</string>
+  <string name="qs_data_switch_text_1">SIM 1</string>
+  <string name="qs_data_switch_text_2">SIM 2</string>
+  <string name="qs_data_switch_changed_1">Datos cambiados a la SIM 1.</string>
+  <string name="qs_data_switch_changed_2">Datos cambiados a la SIM 2.</string>
+  <!-- Smart Pixels QS Tile -->
+  <string name="quick_settings_smart_pixels">Píxeles Inteligentes</string>
+  <string name="quick_settings_smart_pixels_on_power_save">Píxeles Inteligentes autoactivados</string>
+</resources>

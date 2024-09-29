@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2022 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Vendor mismatch fingerprint warning [CHAR LIMIT=NONE] -->
+    <string name="system_error_vendorprint">Tu imagen vendor no coincide con el sistema. Por favor flashea la imagen vendor <xliff:g id="string">%s</xliff:g> para tu dispositivo</string>
+    <!-- Long-press back kill application -->
+    <string name="app_killed_message">Aplicación finalizada</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automático</string>
+    <string name="live_display_auto_summary">Ajusta automáticamente la temperatura del color de la pantalla después de la puesta de sol y el amanecer</string>
+    <string name="live_display_off">Desactivado</string>
+    <string name="live_display_off_summary">Deshabilitar todos los ajustes</string>
+    <string name="live_display_day">Día</string>
+    <string name="live_display_day_summary">Usar solo la configuración diurna</string>
+    <string name="live_display_night">Noche</string>
+    <string name="live_display_night_summary">Usar solo configuración nocturna</string>
+    <string name="live_display_outdoor">Al aire libre (sol brillante)</string>
+    <string name="live_display_outdoor_summary">Usar solo en exteriores</string>
+    <string name="live_display_hint">LiveDisplay puede ayudar a reducir la fatiga visual y ayudarte a dormir por la noche. ¡Haz clic aquí para probarlo!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay apagado.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: modo automático.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo diurno.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo nocturno.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modo exteriores.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay desactivado.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay cambiado al modo automático.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay cambiado al modo diurno.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay cambiado al modo nocturno.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay cambiado al modo exteriores.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">gestionar ajustes de LiveDisplay</string>
+    <string name="permdesc_manageLiveDisplay">Permite que una aplicación configure los ajustes avanzados de pantalla.</string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Copiar URL del registro de errores</string>
+    <string name="url_copy_success">URL copiada con éxito</string>
+    <string name="url_copy_failed">Se ha producido un error al subir el registro a Memochō</string>
+    <!-- Health interface -->
+    <string name="charging_control_notification_channel">Control de carga</string>
+    <string name="charging_control_notification_title">Control de carga</string>
+    <string name="charging_control_notification_cancel_once">Cancelar</string>
+    <string name="charging_control_notification_content_limit">La batería se cargará hasta el %1$d%%</string>
+    <string name="charging_control_notification_content_limit_reached">La batería está cargada al %1$d%%</string>
+    <string name="charging_control_notification_content_target">La batería se cargará completamente en %1$s</string>
+    <string name="charging_control_notification_content_target_reached">La batería está cargada</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Pulsa y mantén el botón de encendido para desbloquear</string>
+    <string name="pocket_view_title">Modo bolsillo activado</string>
+    <string name="pocket_view_title_cancel">Para usar su teléfono:</string>
+    <string name="pocket_view_top_tag_cancel">Comprueba si el área azul de tu teléfono está libre de obstrucciones y limpie la posible suciedad o polvo.</string>
+    <string name="pocket_view_top_tag_cancel2">Mantén presionado el botón de encendido para forzar la salida del modo bolsillo.</string>
+    <string name="pocket_view_top_tag_number1"></string>
+    <string name="pocket_view_top_tag_number2"></string>
+    <!-- Lock gesture -->
+    <string name="gesture_locked_warning">Desliza de nuevo para desbloquear gestos</string>
+    <!-- App lock -->
+    <string name="unlock_application">Desbloquear <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
+    <!-- Parallel space badge -->
+    <string name="parallel_space_badge_label">%1$s</string>
+</resources>
