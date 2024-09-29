@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "ChironLauncher3Overlay",
+    resource_dirs: ["res"],
+    vendor: true,
+}

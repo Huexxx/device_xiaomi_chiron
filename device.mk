@@ -16,6 +16,7 @@
 
 # Overlay
 PRODUCT_PACKAGES += \
+    ChironLauncher3Overlay \
     ChironSettingsOverlay \
     ChironWifiOverlay
 
