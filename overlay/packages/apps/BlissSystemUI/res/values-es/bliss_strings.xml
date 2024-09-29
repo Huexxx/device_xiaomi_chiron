@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2023 BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD cargando</string>
+    <string name="quick_settings_aod_off_label">AOD desactivado</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD desactivado\nAhorro de batería</string>
+
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeina desactivada.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeina activada.</string>
+
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificaciones flotantes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificaciones flotantes desactivadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificaciones flotantes activadas.</string>
+
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Batería Compartida</string>
+    <string name="quick_settings_powershare_enabled_label">Batería Compartida está activada</string>
+
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronización</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronización desactivada.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronización activada.</string>
+
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Compartir por USB</string>
+
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Sonido</string>
+    <string name="quick_settings_sound_ring">Timbre</string>
+    <string name="quick_settings_sound_vibrate">Vibración</string>
+    <string name="quick_settings_sound_mute">Silenciar</string>
+
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">Refresco de pantalla</string>
+    <string name="auto_mode_label">Automático</string>
+
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Panel de volumen</string>
+
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Pantalla ambiente</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Pantalla ambiente desactivada.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Pantalla ambiente activada.</string>
+
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Modo de lectura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modo de lectura activado.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modo de lectura desactivado.</string>
+</resources>
