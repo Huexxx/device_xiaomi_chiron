@@ -17,7 +17,6 @@
 # Overlay
 PRODUCT_PACKAGES += \
     ChironLauncher3Overlay \
-    ChironSettingsOverlay \
     ChironWifiOverlay
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
