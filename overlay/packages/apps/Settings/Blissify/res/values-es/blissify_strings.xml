@@ -171,6 +171,8 @@
     <string name="lockscreen_weather_title">Condiciones meteorológicas</string>
     <string name="lockscreen_weather_summary">Muestra las condiciones meteorológicas actuales</string>
     <string name="lockscreen_weather_enabled_info">Requiere que el servicio meteorológico esté activado</string>
+    <string name="lockscreen_weather_location_title">Localización actual</string>
+    <string name="lockscreen_weather_location_summary">Muestra la localización de las condiciones meteorológicas actuales</string>
     <!-- Battery customizations -->
     <string name="status_bar_battery_style_title">Estilo de batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
