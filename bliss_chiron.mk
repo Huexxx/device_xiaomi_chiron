@@ -18,6 +18,9 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_STOCK_GAPPS := true
 
+# Allow adb on userdebug builds
+WITH_ADB_INSECURE := true
+
 # Remove Unwanteded Packages
 #PRODUCT_PACKAGES += \
 #    RemovePackages
