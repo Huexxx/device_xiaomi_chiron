@@ -19,4 +19,16 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
 
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>default4-default:standard</item>
+        <item>warm:reading</item>
+        <item>cool:dynamic</item>
+        <item>37sRGB-N:srgb</item>
+    </string-array>
+
 </resources>
